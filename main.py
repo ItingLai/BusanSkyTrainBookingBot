@@ -166,8 +166,13 @@ def main(settings: Settings):
             start_time_struct = time.strptime(settings.startTime, "%Y-%m-%d %H:%M:%S")
             start_timestamp = time.mktime(start_time_struct)
             while time.time() < start_timestamp:
+                try:
+                    _ = page.title()
+                except Exception:
+                    break
                 print(f"Waiting for start time... {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}")
-                time.sleep(1)
+                page.wait_for_timeout(1000)
+
 
         payment_page = main_page_control(page, context, settings)
         
