@@ -1,8 +1,8 @@
 
-# skyTrainBot
+# BusanSkyCapsuleBookingBot
 
 ## Introduciton
-This tool supports booking Busan SkyTrain tickets. If you want to book different ticket types, please modify the settings according to the instructions in the `.env` file. To change booking times or payment settings, also refer to the `.env` file. Currently, this tool only supports package ticket bookings.
+This tool supports booking Busan Sky Capsule tickets. If you want to book different ticket types, please modify the settings according to the instructions in the `.env` file. To change booking times or payment settings, also refer to the `.env` file. Currently, this tool only supports package ticket bookings.
 
 ## Installation
 
